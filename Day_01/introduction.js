@@ -1,0 +1,1 @@
+console.log("WELCOME TO 30 DAYS OF JAVASCRIPT");
