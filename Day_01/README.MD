@@ -24,4 +24,4 @@ Variables
 
 Declared with let, const, or var
 Can declare multiple variables in one line separated by commas
-Use descriptive names (camelCase convention)
+Use descriptive names (camelCase convention).
