@@ -66,7 +66,7 @@ console.log(phrase.substring(31, 54))
 
 //exercises: Level 3
 
-//question 1 $ 2
+//question 1 & 2
 
 let sentence1 = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
 console.log(sentence1.match(/love/gi))
