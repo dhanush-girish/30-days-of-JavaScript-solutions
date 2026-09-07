@@ -1,5 +1,5 @@
 //exercise 1
-//question 1
+//question 1 to 23
 
 const emptyArray = [];
 console.log(emptyArray);
@@ -65,3 +65,40 @@ itCompanies.pop();
 console.log(itCompanies);
 itCompanies.length = 0;
 console.log(itCompanies);
+
+//exercise 2
+//question 1 to 6
+
+let text =
+'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+const words = text.replace(/[.,]/g, '').split(' ');
+console.log(words);
+console.log(words.length);
+
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+shoppingCart.unshift('Meat');
+shoppingCart.push('Sugar');
+console.log(shoppingCart);
+shoppingCart.splice(shoppingCart.indexOf('Honey'), 1);
+console.log(shoppingCart);
+shoppingCart[shoppingCart.indexOf('Tea')] = 'Green Tea';
+console.log(shoppingCart);
+
+countries.includes('Ethiopia') ? console.log('ETHIOPIA') : countries.push('Ethiopia');
+
+webTechs.includes('Sass') ? console.log('Sass is a CSS preprocess') : webTechs.push('Sass');
+console.log(webTechs);
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack = frontEnd.concat(backEnd);
+console.log(fullStack)
+
+//exercise 3
+//question 1 to 3
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+console.log(ages.sort());
+console.log(`Min age: ${ages[0]}, Max age: ${ages[ages.length-1]}`);
+
+console.log(`Median age: ${ages.length % 2 === 0 ? (ages[ages.length/2 - 1] + ages[ages.length/2]) / 2 : ages[Math.floor(ages.length/2)]}`);
