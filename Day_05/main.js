@@ -99,6 +99,46 @@ console.log(fullStack)
 
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 console.log(ages.sort());
-console.log(`Min age: ${ages[0]}, Max age: ${ages[ages.length-1]}`);
+const max_age = ages[ages.length - 1];
+const min_age = ages[0];
+console.log(`Min age: ${ages[0]}, Max age: ${max_age}`);
 
 console.log(`Median age: ${ages.length % 2 === 0 ? (ages[ages.length/2 - 1] + ages[ages.length/2]) / 2 : ages[Math.floor(ages.length/2)]}`);
+
+const average_age = ages.reduce((a, b) => a + b, 0) / ages.length;
+console.log(`Average age: ${average_age}`);
+
+const age_range = max_age - min_age;
+console.log(`Age range: ${age_range}`);
+
+console.log(`Min age equals average: ${min_age === average_age}`);
+console.log(`Max age equals average: ${max_age === average_age}`);
+
+const first_10_countries = countries.slice(0, 10);
+console.log(first_10_countries);
+
+console.log(countries.length);
+if (countries.length % 2 === 0) {
+    const middle1 = countries[countries.length / 2 - 1];
+    const middle2 = countries[countries.length / 2];
+    console.log(`Middle countries: ${middle1}, ${middle2}`);
+} else {
+    const middle = countries[Math.floor(countries.length / 2)];
+    console.log(`Middle country: ${middle}`);
+}
+
+if (countries.length % 2 === 0) {
+    const firsthalf = countries.slice(0, countries.length / 2);
+    const secondhalf = countries.slice(countries.length / 2);
+    console.log(`1st half: ${firsthalf}`);
+    console.log(`2nd half: ${secondhalf}`);
+    console.log(`1st half length: ${firsthalf.length}, 2nd half length: ${secondhalf.length}`);
+}
+else {
+    countries.unshift("Dholakpur");
+    const firsthalf = countries.slice(0, Math.floor(countries.length / 2));
+    const secondhalf = countries.slice(Math.floor(countries.length / 2));
+    console.log(`1st half: ${firsthalf}`);
+    console.log(`2nd half: ${secondhalf}`);
+    console.log(`1st half length: ${firsthalf.length}, 2nd half length: ${secondhalf.length}`);
+}
